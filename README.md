@@ -1,2 +1,18 @@
 # encodechka
-The tiniest sentence encoder for Russian language
+## encodechka-eval
+Yet another framework for evaluation of Russian sentence encoders
+
+Этот репозиторий - развитие подхода к оценке моделей из статьи
+[Маленький и быстрый BERT для русского языка](https://habr.com/ru/post/562064).
+Идея в том, чтобы понять, как хорошо разные модели превращают короткие тексты
+в осмысленные векторы.
+
+Похожие проекты:
+* RussianSuperGLUE (фокус на дообучаемых моделях)
+* MOROCCO (RussianSuperGLUE + оценка производительности, трудновоспроизводим)
+* RuSentEval (более академические/лингвистические задачи)
+* Статья от Вышки (ToDo)
+
+Пример запуска метрик - в приложенном блокноте. 
+
+ToDo: добавить пример запуска в колабе

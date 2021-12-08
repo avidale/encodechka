@@ -22,7 +22,7 @@ def find_file(filename):
             p2 = os.path.join(os.environ[DATA_PATH_NAME], filename)
             if os.path.exists(p2):
                 return p2
-        p2 = os.path.join(os.path.abspath(__file__), filename)
+        p2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)
         if os.path.exists(p2):
             return p2
     return filename

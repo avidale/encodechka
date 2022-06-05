@@ -1,9 +1,9 @@
 # encodechka
 ## encodechka-eval
-Yet another framework for evaluation of Russian sentence encoders
 
-Этот репозиторий - развитие подхода к оценке моделей из статьи
-[Маленький и быстрый BERT для русского языка](https://habr.com/ru/post/562064).
+Этот репозиторий - развитие подхода к оценке моделей из поста
+[Маленький и быстрый BERT для русского языка](https://habr.com/ru/post/562064), 
+эволюционировавшего в [Рейтинг русскоязычных энкодеров предложений](https://habr.com/ru/post/669674/).
 Идея в том, чтобы понять, как хорошо разные модели превращают короткие тексты
 в осмысленные векторы.
 
@@ -14,7 +14,7 @@ Yet another framework for evaluation of Russian sentence encoders
 * Статья от Вышки [Popov et al, 2019](https://arxiv.org/abs/1910.13291): первая научная статья на эту тему, но маловато моделей и задач
 * [SentEvalRu](https://github.com/comptechml/SentEvalRu) и [deepPavlovEval](https://github.com/deepmipt/deepPavlovEval): два хороших, но давно не обновлявшихся бенчмарка. 
 
-Пример запуска метрик - в блокноте [evaluation example](https://github.com/avidale/encodechka/blob/master/evaluation%20example.ipynb). 
+Пример запуска метрик – в блокноте [evaluation example](https://github.com/avidale/encodechka/blob/master/evaluation%20example.ipynb). 
 
 Блокнот для воспроизведения лидерборда: https://colab.research.google.com/drive/1fu2i7A-Yr-85Ex_NvIyeCIO7lN2R7P-k?usp=sharing.
 

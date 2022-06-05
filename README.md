@@ -15,4 +15,4 @@ Yet another framework for evaluation of Russian sentence encoders
 
 Пример запуска метрик - в приложенном блокноте. 
 
-ToDo: добавить пример запуска в колабе
+Блокнот для воспроизведения бенчмарка: https://colab.research.google.com/drive/1fu2i7A-Yr-85Ex_NvIyeCIO7lN2R7P-k?usp=sharing. 

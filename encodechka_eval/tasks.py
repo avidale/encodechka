@@ -8,10 +8,14 @@ from .task_specific_evaluators import eval_pairs_multiotput, eval_pairs_clf_mult
     eval_auc_multiotput, evaluate_ner_embedder
 
 DATA_PATH_NAME = 'ENCODECHKA_DATA_PATH'
+SENTENCE_TASK = 'sentence'
+WORD_TASK = 'word'
 # os.environ[DATA_PATH_NAME] = '.'
 
 
 class EncoderTask:
+    TASK_TYPE = SENTENCE_TASK
+
     def eval(self, embedder, name):
         raise NotImplementedError()
 
@@ -155,43 +159,36 @@ class IntentsXTask(EncoderTask):
         return max_score, results
 
 
-class FactRuTask(EncoderTask):
+class NERTask(EncoderTask):
+    TASK_TYPE = WORD_TASK
+
+    def __init__(self, filename):
+        with open(find_file(filename), 'r') as f:
+            data = json.load(f)
+        self.texts_train, self.texts_test, self.labels_train, self.labels_test = train_test_split(
+            data['texts'], data['labels'], test_size=0.5, random_state=1
+        )
+        self.full_cache = {}
+        self.score_cache = {}
+
+    def eval(self, embedder, name):
+        results = evaluate_ner_embedder(
+            embedder, self.texts_train, self.labels_train, self.texts_test, self.labels_test
+        )
+        max_score = max(results.values())
+        self.full_cache[name] = results
+        self.score_cache[name] = max_score
+        return max_score, results
+
+
+class FactRuTask(NERTask):
     def __init__(self, filename='data/factru.json'):
-        with open(find_file(filename), 'r') as f:
-            data = json.load(f)
-        self.texts_train, self.texts_test, self.labels_train, self.labels_test = train_test_split(
-            data['texts'], data['labels'], test_size=0.5, random_state=1
-        )
-        self.full_cache = {}
-        self.score_cache = {}
-
-    def eval(self, embedder, name):
-        results = evaluate_ner_embedder(
-            embedder, self.texts_train, self.labels_train, self.texts_test, self.labels_test
-        )
-        max_score = max(results.values())
-        self.full_cache[name] = results
-        self.score_cache[name] = max_score
-        return max_score, results
+        super(FactRuTask, self).__init__(filename=filename)
 
 
-class RudrTask(EncoderTask):
+class RudrTask(NERTask):
     def __init__(self, filename='data/rudrec.json'):
-        with open(find_file(filename), 'r') as f:
-            data = json.load(f)
-        self.texts_train, self.texts_test, self.labels_train, self.labels_test = train_test_split(
-            data['texts'], data['labels'], test_size=0.5, random_state=1
-        )
-        self.full_cache = {}
-        self.score_cache = {}
-    def eval(self, embedder, name):
-        results = evaluate_ner_embedder(
-            embedder, self.texts_train, self.labels_train, self.texts_test, self.labels_test
-        )
-        max_score = max(results.values())
-        self.full_cache[name] = results
-        self.score_cache[name] = max_score
-        return max_score, results
+        super(RudrTask, self).__init__(filename=filename)
 
 
 class SpeedTask(EncoderTask):
@@ -200,6 +197,7 @@ class SpeedTask(EncoderTask):
             self.sentences = [line.strip() for line in f.readlines()]
         self.full_cache = {}
         self.score_cache = {}
+
     def eval(self, embedder, name):
         t = time.time()
         for text in self.sentences:

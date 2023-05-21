@@ -2,8 +2,8 @@ import numpy as np
 import torch
 
 
-def embed_bert_cls(text, model, tokenizer):
-    t = tokenizer(text, padding=True, truncation=True, max_length=128, return_tensors='pt')
+def embed_bert_cls(text, model, tokenizer, max_length=128):
+    t = tokenizer(text, padding=True, truncation=True, max_length=max_length, return_tensors='pt')
     t = {k: v.to(model.device) for k, v in t.items()}
 
     with torch.no_grad():
@@ -15,8 +15,8 @@ def embed_bert_cls(text, model, tokenizer):
     return {'cls': embeddings[0].cpu().numpy()}
 
 
-def embed_bert_cls2(text, model, tokenizer):
-    t = tokenizer(text, padding=True, truncation=True, max_length=128, return_tensors='pt')
+def embed_bert_cls2(text, model, tokenizer, max_length=128):
+    t = tokenizer(text, padding=True, truncation=True, max_length=max_length, return_tensors='pt')
     t = {k: v.to(model.device) for k, v in t.items()}
     with torch.no_grad():
         model_output = model(**t)
@@ -46,8 +46,8 @@ def embed_bert_pool(text, model, tokenizer, max_length=128):
     return {'mean': sentence_embeddings[0].cpu().numpy()}
 
 
-def embed_bert_both(text, model, tokenizer):
-    t = tokenizer(text, padding=True, truncation=True, max_length=128, return_tensors='pt')
+def embed_bert_both(text, model, tokenizer, max_length=128):
+    t = tokenizer(text, padding=True, truncation=True, max_length=max_length, return_tensors='pt')
     t = {k: v.to(model.device) for k, v in t.items()}
     with torch.no_grad():
         model_output = model(**t)

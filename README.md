@@ -24,48 +24,48 @@
 Ранжирование моделей в по среднему качеству и производительности. 
 Подсвечены Парето-оптимальные модели по каждому из критериев. 
 
-| model                                                       | CPU       | GPU      | size          |   Mean S | Mean S+W   |
-|:------------------------------------------------------------|:----------|:---------|:--------------|---------:|:-----------|
-| intfloat/multilingual-e5-large                              | **506.8** | **30.8** | **2135.9389** |    0.78  | 0.686      |
-| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | **20.5**  | **19.9** | **1081.8485** |    0.762 |            |
-| symanto/sn-xlm-roberta-base-snli-mnli-anli-xnli             | **20.2**  | **16.5** | **1081.8474** |    0.739 |            |
-| cointegrated/LaBSE-en-ru                                    | 133.4     | **15.3** | **489.6621**  |    0.739 | 0.668      |
-| sentence-transformers/LaBSE                                 | 135.1     | **13.3** | 1796.5078     |    0.739 | 0.667      |
-| MUSE-3                                                      | 200.1     | 30.7     | **303.0**     |    0.736 |            |
-| text-embedding-ada-002                                      | 500.0     |          | 3000.0        |    0.734 |            |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | **18.2**  | 14.9     | 479.2547      |    0.734 |            |
-| sentence-transformers/distiluse-base-multilingual-cased-v1  | **11.8**  | **8.0**  | 517.7452      |    0.722 |            |
-| facebook/nllb-200-distilled-600M                            | 252.3     | 15.9     | 1577.4828     |    0.709 | 0.64       |
-| sentence-transformers/distiluse-base-multilingual-cased-v2  | **11.2**  | 9.2      | 517.7453      |    0.708 |            |
-| cointegrated/rubert-tiny2                                   | **6.2**   | **4.6**  | **111.3823**  |    0.704 | 0.638      |
-| sberbank-ai/sbert_large_mt_nlu_ru                           | 504.5     | 29.7     | 1628.6539     |    0.703 | 0.626      |
-| laser                                                       | 192.5     | 13.5     | 200.0         |    0.699 |            |
-| laser2                                                      | 163.4     | 8.6      | 175.0         |    0.694 |            |
-| sberbank-ai/sbert_large_nlu_ru                              | 497.7     | 29.9     | 1628.6539     |    0.688 | 0.626      |
-| clips/mfaq                                                  | 18.1      | 18.2     | 1081.8576     |    0.687 |            |
-| cointegrated/rut5-base-paraphraser                          | 137.0     | 15.6     | 412.0015      |    0.685 | 0.634      |
-| DeepPavlov/rubert-base-cased-sentence                       | 128.4     | 13.2     | 678.5215      |    0.678 | 0.612      |
-| DeepPavlov/distilrubert-base-cased-conversational           | 64.2      | 10.4     | 514.002       |    0.676 | 0.624      |
-| DeepPavlov/distilrubert-tiny-cased-conversational           | 21.2      | **3.3**  | 405.8292      |    0.67  | 0.616      |
-| cointegrated/rut5-base-multitask                            | 136.9     | 12.7     | 412.0015      |    0.668 | 0.623      |
-| sberbank-ai/ruRoberta-large                                 | 512.3     | 25.5     | 1355.7162     |    0.666 | 0.609      |
-| DeepPavlov/rubert-base-cased-conversational                 | 127.5     | 16.3     | 678.5215      |    0.653 | 0.606      |
-| deepvk/deberta-v1-base                                      | 128.6     | 19.0     | 473.2402      |    0.653 | 0.591      |
-| cointegrated/rubert-tiny                                    | 7.5       | 5.9      | **44.97**     |    0.645 | 0.575      |
-| ai-forever/FRED-T5-large                                    | 479.4     | 23.3     | 1372.9988     |    0.639 | 0.551      |
-| inkoziev/sbert_synonymy                                     | 6.9       | 4.2      | 111.3823      |    0.637 | 0.566      |
-| ft_geowac_full                                              | **0.3**   |          | 1910.0        |    0.617 | 0.55       |
-| bert-base-multilingual-cased                                | 141.4     | 13.7     | 678.5215      |    0.614 | 0.565      |
-| sberbank-ai/ruT5-large                                      | 489.6     | 20.2     | 1277.7571     |    0.61  | 0.578      |
-| cointegrated/rut5-small                                     | 37.6      | 8.6      | 111.3162      |    0.602 | 0.564      |
-| ft_geowac_21mb                                              | 1.2       |          | **21.0**      |    0.597 | 0.531      |
-| inkoziev/sbert_pq                                           | 7.4       | 4.2      | 111.3823      |    0.596 | 0.526      |
-| sberbank-ai/ruT5-base                                       | 126.3     | 12.8     | 418.2325      |    0.571 | 0.544      |
-| hashing_1000_char                                           | 0.5       |          | **1.0**       |    0.557 | 0.464      |
-| cointegrated/rut5-base                                      | 127.8     | 15.5     | 412.0014      |    0.554 | 0.53       |
-| hashing_300_char                                            | 0.8       |          | 1.0           |    0.529 | 0.433      |
-| hashing_1000                                                | **0.2**   |          | 1.0           |    0.513 | 0.416      |
-| hashing_300                                                 | 0.3       |          | 1.0           |    0.491 | 0.397      |
+| model                                                       | CPU       | GPU      | size          |   Mean S | Mean S+W   |   dim |
+|:------------------------------------------------------------|:----------|:---------|:--------------|---------:|:-----------|------:|
+| intfloat/multilingual-e5-large                              | **506.8** | **30.8** | **2135.9389** |    0.78  | 0.686      |  1024 |
+| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | **20.5**  | **19.9** | **1081.8485** |    0.762 |            |   768 |
+| symanto/sn-xlm-roberta-base-snli-mnli-anli-xnli             | **20.2**  | **16.5** | **1081.8474** |    0.739 |            |   768 |
+| cointegrated/LaBSE-en-ru                                    | 133.4     | **15.3** | **489.6621**  |    0.739 | 0.668      |   768 |
+| sentence-transformers/LaBSE                                 | 135.1     | **13.3** | 1796.5078     |    0.739 | 0.667      |   768 |
+| MUSE-3                                                      | 200.1     | 30.7     | **303.0**     |    0.736 |            |   512 |
+| text-embedding-ada-002                                      | 500.0     |          | 3000.0        |    0.734 |            |  1536 |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | **18.2**  | 14.9     | 479.2547      |    0.734 |            |   384 |
+| sentence-transformers/distiluse-base-multilingual-cased-v1  | **11.8**  | **8.0**  | 517.7452      |    0.722 |            |   512 |
+| facebook/nllb-200-distilled-600M                            | 252.3     | 15.9     | 1577.4828     |    0.709 | 0.64       |  1024 |
+| sentence-transformers/distiluse-base-multilingual-cased-v2  | **11.2**  | 9.2      | 517.7453      |    0.708 |            |   512 |
+| cointegrated/rubert-tiny2                                   | **6.2**   | **4.6**  | **111.3823**  |    0.704 | 0.638      |   312 |
+| sberbank-ai/sbert_large_mt_nlu_ru                           | 504.5     | 29.7     | 1628.6539     |    0.703 | 0.626      |  1024 |
+| laser                                                       | 192.5     | 13.5     | 200.0         |    0.699 |            |  1024 |
+| laser2                                                      | 163.4     | 8.6      | 175.0         |    0.694 |            |  1024 |
+| sberbank-ai/sbert_large_nlu_ru                              | 497.7     | 29.9     | 1628.6539     |    0.688 | 0.626      |  1024 |
+| clips/mfaq                                                  | 18.1      | 18.2     | 1081.8576     |    0.687 |            |   768 |
+| cointegrated/rut5-base-paraphraser                          | 137.0     | 15.6     | 412.0015      |    0.685 | 0.634      |   768 |
+| DeepPavlov/rubert-base-cased-sentence                       | 128.4     | 13.2     | 678.5215      |    0.678 | 0.612      |   768 |
+| DeepPavlov/distilrubert-base-cased-conversational           | 64.2      | 10.4     | 514.002       |    0.676 | 0.624      |   768 |
+| DeepPavlov/distilrubert-tiny-cased-conversational           | 21.2      | **3.3**  | 405.8292      |    0.67  | 0.616      |   768 |
+| cointegrated/rut5-base-multitask                            | 136.9     | 12.7     | 412.0015      |    0.668 | 0.623      |   768 |
+| sberbank-ai/ruRoberta-large                                 | 512.3     | 25.5     | 1355.7162     |    0.666 | 0.609      |  1024 |
+| DeepPavlov/rubert-base-cased-conversational                 | 127.5     | 16.3     | 678.5215      |    0.653 | 0.606      |   768 |
+| deepvk/deberta-v1-base                                      | 128.6     | 19.0     | 473.2402      |    0.653 | 0.591      |   768 |
+| cointegrated/rubert-tiny                                    | 7.5       | 5.9      | **44.97**     |    0.645 | 0.575      |   312 |
+| ai-forever/FRED-T5-large                                    | 479.4     | 23.3     | 1372.9988     |    0.639 | 0.551      |  1024 |
+| inkoziev/sbert_synonymy                                     | 6.9       | 4.2      | 111.3823      |    0.637 | 0.566      |   312 |
+| ft_geowac_full                                              | **0.3**   |          | 1910.0        |    0.617 | 0.55       |   300 |
+| bert-base-multilingual-cased                                | 141.4     | 13.7     | 678.5215      |    0.614 | 0.565      |   768 |
+| sberbank-ai/ruT5-large                                      | 489.6     | 20.2     | 1277.7571     |    0.61  | 0.578      |  1024 |
+| cointegrated/rut5-small                                     | 37.6      | 8.6      | 111.3162      |    0.602 | 0.564      |   512 |
+| ft_geowac_21mb                                              | 1.2       |          | **21.0**      |    0.597 | 0.531      |   300 |
+| inkoziev/sbert_pq                                           | 7.4       | 4.2      | 111.3823      |    0.596 | 0.526      |   312 |
+| sberbank-ai/ruT5-base                                       | 126.3     | 12.8     | 418.2325      |    0.571 | 0.544      |   768 |
+| hashing_1000_char                                           | 0.5       |          | **1.0**       |    0.557 | 0.464      |  1000 |
+| cointegrated/rut5-base                                      | 127.8     | 15.5     | 412.0014      |    0.554 | 0.53       |   768 |
+| hashing_300_char                                            | 0.8       |          | 1.0           |    0.529 | 0.433      |   300 |
+| hashing_1000                                                | **0.2**   |          | 1.0           |    0.513 | 0.416      |  1000 |
+| hashing_300                                                 | 0.3       |          | 1.0           |    0.491 | 0.397      |   300 |
 
 Ранжирование моделей по задачам.
 Подсвечены наилучшие модели по каждой из задач. 

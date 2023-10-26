@@ -32,9 +32,10 @@
 | cointegrated/LaBSE-en-ru                                    | 133.4     | **15.3** | **489.6621**  |    0.739 | 0.668      |   768 |
 | sentence-transformers/LaBSE                                 | 135.1     | **13.3** | 1796.5078     |    0.739 | 0.667      |   768 |
 | MUSE-3                                                      | 200.1     | 30.7     | **303.0**     |    0.736 |            |   512 |
-| text-embedding-ada-002                                      | 500.0     |          | 3000.0        |    0.734 |            |  1536 |
+| text-embedding-ada-002                                      | ?         |          | ?             |    0.734 |            |  1536 |
 | sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | **18.2**  | 14.9     | 479.2547      |    0.734 |            |   384 |
 | sentence-transformers/distiluse-base-multilingual-cased-v1  | **11.8**  | **8.0**  | 517.7452      |    0.722 |            |   512 |
+| SONAR                                                       | ?         | ?        | 3060.0        |    0.721 |            |  1024 |
 | facebook/nllb-200-distilled-600M                            | 252.3     | 15.9     | 1577.4828     |    0.709 | 0.64       |  1024 |
 | sentence-transformers/distiluse-base-multilingual-cased-v2  | **11.2**  | 9.2      | 517.7453      |    0.708 |            |   512 |
 | cointegrated/rubert-tiny2                                   | **6.2**   | **4.6**  | **111.3823**  |    0.704 | 0.638      |   312 |
@@ -81,6 +82,7 @@
 | text-embedding-ada-002                                      | 0.78     | 0.66     | 0.44     | 0.77     | 0.96     | 0.77     | 0.75     | 0.73     |          |          |
 | sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 0.84     | 0.62     | 0.5      | 0.76     | 0.92     | 0.74     | 0.77     | 0.72     |          |          |
 | sentence-transformers/distiluse-base-multilingual-cased-v1  | 0.8      | 0.6      | 0.43     | 0.75     | 0.94     | 0.76     | 0.76     | 0.74     |          |          |
+| SONAR                                                       | 0.71     | 0.58     | 0.41     | 0.77     | 0.98     | 0.79     | 0.78     | 0.74     |          |          |
 | facebook/nllb-200-distilled-600M                            | 0.71     | 0.54     | 0.41     | 0.76     | 0.95     | 0.76     | 0.8      | 0.75     | 0.31     | 0.42     |
 | sentence-transformers/distiluse-base-multilingual-cased-v2  | 0.79     | 0.55     | 0.42     | 0.75     | 0.91     | 0.75     | 0.76     | 0.73     |          |          |
 | cointegrated/rubert-tiny2                                   | 0.75     | 0.65     | 0.42     | 0.74     | 0.94     | 0.75     | 0.76     | 0.64     | 0.36     | 0.39     |

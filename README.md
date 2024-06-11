@@ -29,6 +29,7 @@
 | BAAI/bge-m3                                                 | 523.4     | 22.5     | **2166.0**    |    0.787 | 0.696      |  1024 |
 | intfloat/multilingual-e5-large-instruct                     | 501.5     | 25.71    | **2136.0**    |    0.784 | 0.684      |  1024 |
 | intfloat/multilingual-e5-large                              | **506.8** | **30.8** | **2135.9389** |    0.78  | 0.686      |  1024 |
+| deepvk/USER-base                                            | 33.1      | **12.2** | 473.2402      |    0.772 | 0.688      |   768 |    
 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | **20.5**  | **19.9** | **1081.8485** |    0.762 |            |   768 |
 | intfloat/multilingual-e5-base                               | 130.61    | 14.39    | **1061.0**    |    0.761 | 0.669      |   768 |
 | intfloat/multilingual-e5-small                              | 40.86     | 12.09    | **449.0**     |    0.742 | 0.645      |   384 |
@@ -36,7 +37,7 @@
 | cointegrated/LaBSE-en-ru                                    | 133.4     | **15.3** | **489.6621**  |    0.739 | 0.668      |   768 |
 | sentence-transformers/LaBSE                                 | 135.1     | **13.3** | 1796.5078     |    0.739 | 0.667      |   768 |
 | MUSE-3                                                      | 200.1     | 30.7     | **303.0**     |    0.736 |            |   512 |
-| text-embedding-ada-002                                      | ?         |          | ?             |    0.734 |            |  1536 |
+| text-embedding-ada-002                                      | ?         |          |              |    0.734 |            |  1536 |
 | sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | **18.2**  | 14.9     | 479.2547      |    0.734 |            |   384 |
 | sentence-transformers/distiluse-base-multilingual-cased-v1  | **11.8**  | **8.0**  | 517.7452      |    0.722 |            |   512 |
 | SONAR                                                       | ?         | ?        | 3060.0        |    0.721 |            |  1024 |
@@ -82,6 +83,7 @@
 | BAAI/bge-m3                                                 | **0.86** | **0.75** | 0.51     | **0.82** | 0.97    | 0.79     | 0.81     | **0.78** | 0.24     | 0.42     |
 | intfloat/multilingual-e5-large-instruct                     | 0.86     | 0.74     | 0.47     | 0.81     | 0.98    | 0.8      | **0.82** | 0.77     | 0.21     | 0.35     |
 | intfloat/multilingual-e5-large                              | 0.86     | 0.73     | 0.47     | 0.81     | 0.98    | 0.8      | 0.82     | 0.77     | 0.24     | 0.37     |
+| deepvk/USER-base                                            | 0.85     | 0.74     | 0.48     | 0.81     | 0.99     | **0.81**  | 0.8    | 0.7      | 0.29     | 0.41     |
 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 0.85     | 0.66     | 0.54     | 0.79     | 0.95     | 0.78     | 0.79     | 0.74     |          |          |
 | intfloat/multilingual-e5-base                               | 0.83     | 0.7      | 0.46     | 0.8      | 0.96    | 0.78     | 0.8      | 0.74     | 0.23     | 0.38     |
 | intfloat/multilingual-e5-small                              | 0.82     | 0.71     | 0.46     | 0.76     | 0.96    | 0.76     | 0.78     | 0.69     | 0.23     | 0.27     |

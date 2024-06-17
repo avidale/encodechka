@@ -19,6 +19,8 @@
 Блокнот для воспроизведения лидерборда: [v2021](https://colab.research.google.com/drive/1fu2i7A-Yr-85Ex_NvIyeCIO7lN2R7P-k?usp=sharing), 
 [v2023](https://colab.research.google.com/drive/1t956aJsp5qPnst3379vI8NNRqiqJUFMn?usp=sharing).
 
+Лидерборд на [HuggingFace Space](https://huggingface.co/spaces/Samoed/Encodechka).
+
 ### Лидерборд
 
 Ранжирование моделей в по среднему качеству и производительности. 

@@ -34,6 +34,7 @@
 | deepvk/USER-base                                            | 33.1      | **12.2** | 473.2402      |    0.772 | 0.688      |   768 |    
 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | **20.5**  | **19.9** | **1081.8485** |    0.762 |            |   768 |
 | intfloat/multilingual-e5-base                               | 130.61    | 14.39    | **1061.0**    |    0.761 | 0.669      |   768 |
+| sergeyzh/rubert-tiny-turbo                                  | **5.5**   | **3.3**  | **111.4**     |    0.749 | 0.667      |   312 |
 | intfloat/multilingual-e5-small                              | 40.86     | 12.09    | **449.0**     |    0.742 | 0.645      |   384 |
 | symanto/sn-xlm-roberta-base-snli-mnli-anli-xnli             | **20.2**  | **16.5** | **1081.8474** |    0.739 |            |   768 |
 | cointegrated/LaBSE-en-ru                                    | 133.4     | **15.3** | **489.6621**  |    0.739 | 0.668      |   768 |
@@ -45,7 +46,7 @@
 | SONAR                                                       | ?         | ?        | 3060.0        |    0.721 |            |  1024 |
 | facebook/nllb-200-distilled-600M                            | 252.3     | 15.9     | 1577.4828     |    0.709 | 0.64       |  1024 |
 | sentence-transformers/distiluse-base-multilingual-cased-v2  | **11.2**  | 9.2      | 517.7453      |    0.708 |            |   512 |
-| cointegrated/rubert-tiny2                                   | **6.2**   | **4.6**  | **111.3823**  |    0.704 | 0.638      |   312 |
+| cointegrated/rubert-tiny2                                   | **5.5**   | **3.3**  | **111.3823**  |    0.704 | 0.638      |   312 |
 | ai-forever/sbert_large_mt_nlu_ru                            | 504.5     | 29.7     | 1628.6539     |    0.703 | 0.626      |  1024 |
 | laser                                                       | 192.5     | 13.5     | 200.0         |    0.699 |            |  1024 |
 | laser2                                                      | 163.4     | 8.6      | 175.0         |    0.694 |            |  1024 |
@@ -88,6 +89,7 @@
 | deepvk/USER-base                                            | 0.85     | 0.74     | 0.48     | 0.81     | 0.99     | **0.81**  | 0.8    | 0.7      | 0.29     | 0.41     |
 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 0.85     | 0.66     | 0.54     | 0.79     | 0.95     | 0.78     | 0.79     | 0.74     |          |          |
 | intfloat/multilingual-e5-base                               | 0.83     | 0.7      | 0.46     | 0.8      | 0.96    | 0.78     | 0.8      | 0.74     | 0.23     | 0.38     |
+| sergeyzh/rubert-tiny-turbo                                  | 0.83     | 0.72     | 0.48     | 0.79     | 0.95    | 0.76     | 0.78      | 0.68     | 0.30     | 0.37     |
 | intfloat/multilingual-e5-small                              | 0.82     | 0.71     | 0.46     | 0.76     | 0.96    | 0.76     | 0.78     | 0.69     | 0.23     | 0.27     |
 | symanto/sn-xlm-roberta-base-snli-mnli-anli-xnli             | 0.76     | 0.6      | **0.86** | 0.76     | 0.91     | 0.72     | 0.71     | 0.6      |          |          |
 | cointegrated/LaBSE-en-ru                                    | 0.79     | 0.66     | 0.43     | 0.76     | 0.95     | 0.77     | 0.79     | 0.77     | 0.35     | 0.42     |

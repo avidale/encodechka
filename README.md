@@ -12,7 +12,8 @@
 * [MOROCCO](https://github.com/RussianNLP/MOROCCO/): RussianSuperGLUE + оценка производительности, трудновоспроизводим
 * [RuSentEval](https://github.com/RussianNLP/RuSentEval): более академические/лингвистические задачи
 * Статья от Вышки [Popov et al, 2019](https://arxiv.org/abs/1910.13291): первая научная статья на эту тему, но маловато моделей и задач
-* [SentEvalRu](https://github.com/comptechml/SentEvalRu) и [deepPavlovEval](https://github.com/deepmipt/deepPavlovEval): два хороших, но давно не обновлявшихся бенчмарка. 
+* [SentEvalRu](https://github.com/comptechml/SentEvalRu) и [deepPavlovEval](https://github.com/deepmipt/deepPavlovEval): два хороших, но давно не обновлявшихся бенчмарка.
+* **ruMTEB** ([пост](https://habr.com/ru/companies/sberdevices/articles/831150/), [код MTEB](https://github.com/embeddings-benchmark/mteb)) - русскоязычная часть MTEB. С недавнего времени там есть 23 разнообразных задачи (включая поиск и переранжирование, которых нет в Encodechka), но, кажется, там нет замеров быстродействия. Если последнее вам не критично, рекомендуется использовать ruMTEB вместо Encodechka.
 
 Пример запуска метрик – в блокноте [evaluation example](https://github.com/avidale/encodechka/blob/master/evaluation%20example.ipynb). 
 
